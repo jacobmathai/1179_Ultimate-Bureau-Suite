@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="true"
+    android:orientation="vertical" 
+    android:background="@color/red">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.58"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:id="@+id/rowContainer"
+            android:layout_width="270dp"
+            android:layout_height="262dp"
+            android:background="@android:color/background_light"
+            android:gravity="center" >
+
+            <TableRow
+                android:id="@+id/row1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/bt00"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/bg"
+                    android:text="@string/bt00" android:onClick="clickHandler"/>
+
+                <Button
+                    android:id="@+id/bt01"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/bg"
+                    android:text="@string/bt01" android:onClick="clickHandler"/>
+
+                <Button
+                    android:id="@+id/bt02"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/bg"
+                    android:text="@string/bt02" android:onClick="clickHandler"/>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/bt10"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/bg"
+                    android:text="@string/bt10" android:onClick="clickHandler"/>
+
+                <Button
+                    android:id="@+id/bt11"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/bg"
+                    android:text="@string/bt11" android:onClick="clickHandler"/>
+
+                <Button
+                    android:id="@+id/bt12"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/bg"
+                    android:text="@string/bt12" android:onClick="clickHandler"/>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/bt20"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/bg"
+                    android:text="@string/bt20" android:onClick="clickHandler"/>
+
+                <Button
+                    android:id="@+id/bt21"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/bg"
+                    android:text="@string/bt21" android:onClick="clickHandler"/>
+
+                <Button
+                    android:id="@+id/bt22"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/bg"
+                    android:text="@string/bt22" android:onClick="clickHandler"/>
+            </TableRow>
+        </TableLayout>
+</LinearLayout>
+<TextView
+        android:id="@+id/whoseTurn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/whoseTurn"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:id="@+id/scoreContainer"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" >
+
+        <TextView
+            android:id="@+id/score1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.99"
+            android:gravity="center"
+            android:text="@string/Score1"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/score2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2.01"
+            android:gravity="center"
+            android:text="@string/Score2"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+</LinearLayout>

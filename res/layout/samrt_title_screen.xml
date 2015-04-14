@@ -1,0 +1,52 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" 
+  android:background="@android:color/background_light" >
+  <TextView
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="32dp"
+    android:text="SNAKE"
+    android:textColor="@android:color/black"
+    android:textSize="40dp" />
+
+
+  <ImageView
+    android:id="@+id/imageView1"
+    android:layout_width="240dp"
+    android:layout_height="fill_parent"
+    android:layout_above="@+id/s1"
+    android:layout_below="@+id/textView1"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="35dp"
+    android:layout_marginTop="30dp"
+    android:src="@drawable/home" />
+
+  <Button
+      android:id="@+id/s1"
+      android:layout_width="110dp"
+      android:layout_height="75dp"
+      android:layout_above="@+id/button2"
+      android:layout_alignLeft="@+id/button2"
+      android:layout_marginBottom="25dp"
+      android:background="@color/canvas"
+      android:onClick="startGame"
+      android:text="@string/begin" />
+
+  <Button
+      android:id="@+id/button2"
+      android:layout_width="110dp"
+      android:layout_height="75dp"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="16dp"
+      android:background="@color/canvas"
+      android:onClick="options"
+      android:text="@string/optionsButton" />
+
+</RelativeLayout>

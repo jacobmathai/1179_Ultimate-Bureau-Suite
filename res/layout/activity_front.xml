@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_la_bg111"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_black"
+    tools:context=".ActivityFront" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <FrameLayout
+            android:id="@+id/FrameLayout1"
+            android:layout_width="50dp"
+            android:layout_height="50dp" >
+
+            <FrameLayout
+                android:id="@+id/frame_refresh"
+                android:layout_width="50dp"
+                android:layout_height="50dp" >
+
+                <ImageView
+                    android:id="@+id/imageView_front_grid_single"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/a_refresh" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_progress"
+                android:layout_width="50dp"
+                android:layout_height="50dp" >
+
+                <ProgressBar
+                    android:id="@+id/progressBar1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="100" >
+
+            <EditText
+                android:id="@+id/editText_search_pdf"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="70"
+                android:textColor="@android:color/black"
+                android:ems="12" />
+
+            <ImageView
+                android:id="@+id/imageView_search"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:src="@drawable/a_search" />
+
+            <ImageView
+                android:id="@+id/imageView3_home"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:src="@drawable/a_home" />
+
+            <ImageView
+                android:id="@+id/imageView_menu"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/a_menu" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp" >
+
+        <ListView
+            android:id="@+id/listview_pdf_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+        </ListView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   
+
+    <string name="author1">David Vu</string>
+    <string name="author2">Fabrice Ahebee</string>
+    <string name="onePlayer">one player</string>
+    <string name="twoPlayer">Start</string>
+    <string name="quit">quit</string>
+    <string name="bt00"></string>
+    <string name="bt01"></string>
+    <string name="bt02"></string>
+    <string name="bt10"></string>
+    <string name="bt11"></string>
+    <string name="bt12"></string>
+    <string name="bt20"></string>
+    <string name="bt21"></string>
+    <string name="bt22"></string>
+    <string name="title">TicTacToe-multi</string>
+    <string name="Score1">Player 1: 0</string>
+    <string name="Score2">Player 2: 0</string>
+    <string name="whoseTurn">Player 1 Starts !</string>
+
+</resources>

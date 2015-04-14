@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+ 
+	<TableLayout 
+
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:stretchColumns="0">
+	
+		<TableRow>
+			<TextView
+				android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content" 
+				android:id="@+id/fb_title"
+				android:layout_column="0"
+				android:singleLine="true"
+				android:padding="5dip"
+				android:text="File Browser" 
+				android:layout_gravity="center_vertical" 
+				android:textAppearance="?android:attr/textAppearanceMedium" />
+			
+			<ImageButton
+			    android:id="@+id/fb_usethisdirbutton"
+			    android:layout_width="50dp"
+			    android:layout_height="50dp"
+			    android:layout_column="2"
+			    android:adjustViewBounds="true"
+			    android:gravity="right"
+			    android:background="@android:color/transparent"
+			    android:layout_margin="5dp"
+		
+			    android:src="@drawable/apply" />
+			
+			<ImageButton
+			    android:id="@+id/fb_upbutton"
+			    android:layout_width="50dp"
+			    android:layout_height="50dp"
+			    android:layout_column="15"
+		
+			    android:gravity="right"
+			       android:layout_margin="5dp"
+			    android:maxHeight="50dip"
+			    android:maxWidth="50dip"
+			 android:background="@android:color/transparent"
+			    android:src="@drawable/directory_up" />
+
+		</TableRow>
+	</TableLayout>
+
+	<!-- This is the main view for the whole filebrowser -->
+	<LinearLayout 
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@android:color/white">
+	<TextView
+			android:id="@+id/filepath"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:text="Location: /sdcard/"
+			android:textColor="@android:color/black"
+			android:paddingLeft="5dip"
+			android:paddingBottom="3dip"
+			android:paddingTop="0dip"
+			android:singleLine="false"
+			android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+		<ListView  
+		    android:divider="@android:drawable/divider_horizontal_bright"
+		    android:background="@android:color/white"
+			android:cacheColorHint="#00000000"
+			android:id="@+id/filelist"
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:color="@android:color/white" />
+		
+		<!-- This is to make sure the text box is always big -->
+		<View
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent"
+			android:background="@android:color/white"
+			android:layout_weight="1" />
+			
+		<!-- The visibility of this is changed to visible when there are no files -->
+		<TextView	
+			android:id="@+id/nofilemessage"
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent"
+			android:gravity="center_vertical|center_horizontal"
+			android:text="@string/nofilesindirectory"
+			android:textColor="#aaa" 
+			android:background="@android:color/white"
+			android:textAppearance="?android:attr/textAppearanceMedium" 
+			android:visibility="gone" />
+		<View
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent"
+			android:background="@android:color/white" 
+			android:layout_weight="1" />
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/silver" >
+
+    <TextView
+        android:id="@+id/twoPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/twoPlayer"
+        android:textAppearance="?android:attr/textAppearanceLarge" android:paddingTop="10pt" android:paddingBottom="10pt" android:clickable="true" android:onClick="onClick"/>
+
+    <TextView
+        android:id="@+id/quit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quit"
+        android:textAppearance="?android:attr/textAppearanceLarge" android:paddingBottom="10pt" android:paddingTop="10pt" android:clickable="true" android:onClick="onClick"/>
+
+</LinearLayout>

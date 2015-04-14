@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ulimate.bureau.suite"
+    android:versionCode="1"
+    android:versionName="2.1" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="22" />
+
+      <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+        <uses-permission android:name="android.permission.CAMERA" />
+   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name">
+<!--         android:theme="@style/AppTheme"  -->
+
+         <activity  android:name="aa_front.Activity_first_launcher"
+             android:label="@string/title_activity_listdirectry" >
+       <intent-filter><action android:name="android.intent.action.MAIN"></action>"
+             <category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity>
+        
+        
+         
+         
+                <!--      sssssssssssssss sssssssssssssss Utility   ssssssssssssssssssssssssssssssssssssssssssss   -->  
+             
+        <activity
+            android:name="com.bino.smartutilityyy.Grid"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.bino.smartutilityyy.Grid" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+        
+        
+        
+        
+        <activity
+            android:name="com.bino.smartutilityyy.Flashlightmain"
+            android:label="@string/title_activity_flashlight"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        
+        
+                <activity
+            android:name="com.eeeeeeeeeeeee.calendar.Calendar_here_we_go"
+            android:label="@string/title_activity_dualflashlight"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+                
+        <activity
+            android:name="com.bino.smartutilityyy.Brightnessactivity"
+            android:label="@string/title_activity_dualflashlight"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bino.smartutilityyy.Agecalculatormain"
+            android:label="@string/title_activity_agecalculator"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bino.smartutilityyy.Calculatoronly"
+            android:label="@string/title_activity_calculator" 
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.bino.smartutilityyy.Front2"
+            android:label="@string/title_activity_calculators" 
+            android:screenOrientation="portrait">
+        </activity>
+ 
+        <activity
+            android:name="com.bino.smartutilityyy.UnitConverter"
+            android:label="@string/title_activity_converter"
+            android:screenOrientation="portrait" >
+        </activity>
+    
+     
+       
+        <activity
+            android:name="com.bino.smartutilityyy.Front3"
+            android:label="@string/title_activity_games" 
+             android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.bino.smartutilityyy.Settings"
+            android:label="@string/settings_title" 
+             android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.bino.smartutilityyy.Game"
+            android:label="@string/game_title" 
+             android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.bino.smartutilityyy.PuzzleView" >
+        </activity>
+        <activity android:name="com.bino.smartutilityyy.Graphics" >
+        </activity>
+
+    
+  
+
+        <activity
+            android:name="com.bino.smartutilityyy.Front"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+        </activity>
+
+     
+      <activity
+            android:name="com.bino.snake.GameScreen"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+        </activity>
+         <activity
+            android:name="com.bino.snake.OptionsScreen"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.bino.snake.TitleScreen"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+        </activity>
+         <activity
+            android:name="bino.tic.StartActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+        </activity>
+         <activity
+            android:name="bino.tic.MenuActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="bino.tic.GameActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+        </activity>
+        <!--      sssssssssssssss sssssssssssssss sText editor   ssssssssssssssssssssssssssssssssssssssssssss   --> 
+         
+         
+         
+         
+         <activity android:name="com.ultimate.text.editer.pmTextEdit"
+                  android:label="@string/app_name"
+                  android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="com.ultimate.text.editer.pmTextEdit"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+                <data android:mimeType="text/htm" />
+                <data android:mimeType="text/html" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable"
+                   android:resource="@xml/searchable"/>
+        </activity>
+        
+         
+        
+        <activity  
+            android:name="com.ultimate.text.editer.FileBrowser"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+<!--         <provider -->
+<!--             android:name="com.ultimate.text.editer.SearchSuggestions" -->
+<!--             android:authorities="org.paulmach.authority" /> -->
+        
+<!--      sssssssssssssss sssssssssssssss s File Exp ssssssssssssssssssssssssssssssssssssssssssss   -->
+        
+        
+        
+        <activity  android:name="com.ebin.fileexp.lite.ActivityListdirectry"
+             android:label="@string/title_activity_listdirectry" >
+       <intent-filter><action android:name="com.ebin.fileexp.lite.ActivityListdirectry" />
+             <category android:name="android.intent.category.DEFAULT" /></intent-filter>
+        </activity>
+        
+        <activity android:name="com.ebin.fileexp.lite.AboutyActivity"
+            android:label="@string/title_activity_listdirectry" >  <intent-filter>
+                <action android:name="com.ebin.fileexp.lite.AboutyActivity" />
+                <category android:name="android.intent.category.DEFAULT" /> </intent-filter>
+        </activity>
+        
+        
+        <activity   android:name="com.ebin.fileexp.lite.image.viewer.FullScreenViewActivity"
+            android:label="@string/title_activity_listdirectry" > <intent-filter>
+                <action android:name="com.image.viewer.FullScreenViewActivity" />
+                <category android:name="android.intent.category.DEFAULT" /> </intent-filter>
+        </activity>
+        
+        
+        <activity  android:name="com.ebin.fileexp.lite.musicplayer.AndroidBuildingMusicPlayerActivity"
+            android:label="@string/title_activity_listdirectry" > <intent-filter>
+                <action android:name="musicplayer.AndroidBuildingMusicPlayerActivity" />
+               <category android:name="android.intent.category.DEFAULT" />  </intent-filter>
+        </activity>
+        
+        <activity android:name="com.ebin.fileexp.lite.musicplayer.PlayListActivity"
+            android:label="@string/title_activity_listdirectry" >
+            <intent-filter> <action android:name="musicplayer.PlayListActivity" />
+          <category android:name="android.intent.category.DEFAULT" /> </intent-filter>
+        </activity>
+        
+        
+        <activity   android:name="com.dark.explorer.lite.ebinjoy.AboutyActivity"
+            android:label="ss" > </activity>
+        
+        <activity android:name="com.ebin.fileexp.lite.vedio.player.VideoPlayerActivity"
+            android:label="@string/app_name" android:screenOrientation="landscape" >
+            <intent-filter>  <action android:name="com.ebin.fileexp.lite.vedio.player.VideoPlayerActivity" />
+            <category android:name="android.intent.category.DEFAULT" />   </intent-filter>
+        </activity>
+        
+          <activity    android:name="com.ebin.fileexp.lite.a.Activity_fileexp_settings"
+            android:label="@string/app_name"> <intent-filter>
+                <action android:name="com.ebin.fileexp.lite.a.Activity_fileexp_settings" />
+                 <category android:name="android.intent.category.DEFAULT" /> </intent-filter>
+        </activity>
+    
+        
+        
+        
+        
+        
+        
+        
+                 
+           
+<!-- sssssssssssssssssssssssssssssssBElow PDF ACT sssssssssssssssssssssssssssssssssssss -->
+                                   
+                                     
+        
+        
+        
+        
+        
+       
+        <activity   android:windowSoftInputMode="stateHidden"
+            android:theme="@android:style/Theme.Holo"
+            android:name="com.example.pdfviewerlite.ActivityFront"
+            android:label="@string/title_activity_listdirectry" >
+            <intent-filter>    <action  android:name="com.example.pdfviewerlite.ActivityFront"/>
+            <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+        
+         <activity   android:windowSoftInputMode="stateHidden"
+            android:name="com.example.pdfviewerlite.AboutyActivity"
+            android:label="@string/app_name" > <intent-filter>
+                <action android:name="com.example.pdfviewerlite.AboutyActivity" />
+                 <category android:name="android.intent.category.DEFAULT" />  </intent-filter>
+        </activity>
+        
+           <activity android:name="com.example.pdfviewerlite.ActivityFileChooser"></activity>     
+                        
+ <activity
+            android:name="com.artifex.mupdf.MuPDFActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="application/vnd.ms-xpsdocument" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="application/pdf" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="application/x-cbz" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="file" />
+                <data android:mimeType="*/*" />
+                <data android:pathPattern=".*\\.xps" />
+                <data android:host="*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="file" />
+                <data android:mimeType="*/*" />
+                <data android:pathPattern=".*\\.pdf" />
+                <data android:host="*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="file" />
+                <data android:mimeType="*/*" />
+                <data android:pathPattern=".*\\.cbz" />
+                <data android:host="*" />
+            </intent-filter>
+        </activity>
+       
+                   
+        <activity
+            android:name="com.artifex.mupdf.OutlineActivity"
+            android:label="@string/outline_title" >
+        </activity>
+        <activity android:name="pdet.wordandexcel.ViewFile" >
+        </activity>
+        <activity android:name="pdet.wordandexcel.ExcelRead" >
+        </activity>
+          <activity android:name="pdet.email.Welcome" >
+        </activity>
+          <activity android:name="pdet.email.SendMail" >
+        </activity>
+          <activity android:name="pdet.email.ReceiveAndSend" >
+        </activity>                        
+                                           
+                                           
+        
+    </application>
+
+    
+    
+    
+    
+    
+    
+
+
+    
+    
+</manifest>
